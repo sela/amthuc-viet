@@ -1,0 +1,32 @@
+---
+layout: default
+permalink: "/menu.html"
+---
+<section>
+    <div class="section-title">
+        <h2><span><a href="/menu">Menu</a></span></h2>
+    </div>
+
+    <div class="article-post">
+        <section class="recent-posts">
+            <div class="section-title">
+                <h2><span>{{ page.title }}</span></h2>
+            </div>
+            {% assign menu_items = site.data.amthuc_viet_menu  | where: "category", page.menu_type %}
+            {% assign category_name = page.url | remove:'/' | capitalize %}
+            <div class="container">
+                {% for item in menu_items %}
+                <div class="row">
+                    <div class="col-md-8 bg-light">{{ item.title }}</div>
+                    <div class="col-md-2 bg-light text-lg-right">£{{ item.price }}</div>
+                </div>
+                <div class="row" style="padding-bottom: 25px">
+                    <div class="col-md-8">{{ item.description }}</div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+    </div>
+
+
+</section>
