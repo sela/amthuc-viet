@@ -6,12 +6,12 @@ title: Menu
 
 <div class="row justify-content-between">
     <div class="col-md-8 pr-5">
-        <a href="starters" class="btn btn-info">Starters</a>
-        <a href="mains" class="btn btn-info">Mains</a> 
-        <a href="salads" class="btn btn-info">Salads</a> 
-        <a href="soups" class="btn btn-info">Soups</a> 
-        <a href="vegan-starters" class="btn btn-info">Vegan Starters</a> 
-        <a href="vegan-mains" class="btn btn-info">Vegan Mains</a>
-        <a href="rice" class="btn btn-info">Rice</a>
+        <a href="starters" class="btn btn-info btn-spacing">Starters</a>
+        <a href="mains" class="btn btn-info btn-spacing">Mains</a> 
+        <a href="salads" class="btn btn-info btn-spacing">Salads</a> 
+        <a href="soups" class="btn btn-info btn-spacing">Soups</a> 
+        <a href="vegan-starters" class="btn btn-info btn-spacing">Vegan Starters</a> 
+        <a href="vegan-mains" class="btn btn-info btn-spacing">Vegan Mains</a>
+        <a href="rice" class="btn btn-info btn-spacing">Rice</a> 
     </div>
 </div>
