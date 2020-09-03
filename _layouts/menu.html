@@ -16,17 +16,19 @@ permalink: "/menu.html"
             {% assign category_name = page.url | remove:'/' | capitalize %}
             <div class="container">
                 {% for item in menu_items %}
-                <div class="row">
-                    <div class="col-10 bg-light font-weight-bold">{{ item.title }}</div>
-                    <div class="col-2 bg-light text-right">£{{ item.price }}</div>
-                </div>
-                <div class="row" style="padding-bottom: 25px">
-                    <div class="col-12">{{ item.description }}</div>
+                <div class="d-flex" style="border-top: 1px solid #e8ebeb; padding: 10px;">
+                    <div class="p-8 font-weight-bold">
+                        <div class="font-weight-bold">{{ item.title }}</div>
+                        <div style="font-size: 14px; padding-top: 5px">{{ item.description }}</div>
+                        <div style="padding-top: 5px">£{{ item.price }}</div>
+                    </div>
+
+                    <div class="ml-auto pl-4 pics">
+                        <img src="/assets/images/{{ item.title | slugify }}.jpg" class="img-fluid" style="border-radius: 3px; height: 125px;">
+                    </div>
                 </div>
                 {% endfor %}
             </div>
         </section>
     </div>
-
-
 </section>

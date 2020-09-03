@@ -1,30 +1,30 @@
-title,description,price,category,allergy
-SPRING ROLLS,2 Crispy spring rolls filled with pork/beef/vegetarian.,2,starters,
-SUMMER ROLLS,"2 Fresh rice paper summer rolls with mint, herbs, vermicelli & prawn served with fish sauce or peanut sauce.",4,starters,
-PRAWNS CAKE,2 mini prawn pancakes with prawn and sweet potato.,4,starters,
-CHICKEN SKEWER,2 sticks of satay chicken with peanut sauce.,4,starters,
-TIGER PRAWN SKEWER,A skewer of 4 tiger prawns cooked with garlic butter.,4,starters,
-CABBAGE SALAD,"Cabbage, carrot, vietnamese mints, peanut,fried shallot, and fresh dressing, served with a rice cracker.",4,salads,
-GRILLED PORK SALAD,pickle salad with grilled pork.,6,salads,
-BUN BO HUE,"Beef noodle soup with vermicelli, fermented shrimp sauce, lemongrass, mints & onion.",12,soups,
-CHICKEN PHO ,Slices of chicken in chicken broth.,10,soups,
-LAMB SOUP,Lamb Shank soup with noodle.,15,soups,
-TOM YUM ,Thai Tom Yum noodle soup.,10,soups,
-CHICKEN CURRY,"Chicken curry soup in coconut milk, sweet potato & onion. Served with noodles.",10,soups,
-BROKEN RICE,"Broken rice served with grilled pork, meatloaf, pickles & salad.",12,mains,
-PORK RIBS,Grilled lemongrass pork ribs.,10,mains,
-FRIED NOODLES,Fried noodles with prawns and vegetables.,10,mains,
-SALMON,"Fried Salmon cooked in lemon, dill, ginger & garlic sauce.",12,mains,
-VERMICELLI WITH GRILLED PORK,"Vermicelli, grilled pork & spring onion. Severed with fish sauce.",12,mains,
-FRIED RICE MIXED,"Fried mix of carrot, pea, celery, onion, shallot, spring onion, egg, pork, prawn & rice.",10,mains,
-SPRING ROLLS,2 Crispy spring rolls filled with vegetables.,2,vegan-starters,
-SUMMER ROLLS,"2 fresh rice paper rolls with noodle, cucumber & herbs. Served with peanut sauce.",4,vegan-starters,
-TOFU IN TOMATO SAUCE,"Tofu cooked with tomato sauce, herbs & onion.",6,vegan-starters,
-GREEN STIR FRIED ,Pak choi stir fried with garlic & shitake mushroom.,5,vegan-starters,
-SALAD,"Seasonal vegetables with mints, herbs, peanut & shallot. Severed with a sesame cracker.",5,vegan-starters,
-MUSHROOM IN COCONUT MILK,"Shimeji/chestnut mushroom cooked with coconut milk, parsley & Alpinia officinarum.",7,vegan-starters,
-STEAMED ENOKI MUSHROOM,"Enoki mushroom steamed with soy sauce, spring onion & black pepper.",6,vegan-starters,
-STIR FRIED OYSTER MUSHROOMS ,"King oyster mushrooms stir fried with mushroom sauce, black pepper & coriander.",8,vegan-starters,
-VEGETABLE NOODLES,"Fried green vegetables, spring onion, chive, mushroom, tofu & noodles.",8,vegan-mains,
-FRIED RICE,"Fried mix of carrot, pea, celery, onion, shallot, spring onion, mushroom & rice.",8,vegan-mains,
-STEAMED RICE ,Steamed Jasmine rice.,2,rice,
+title,description,price,category,allergy,dietary,vietnamese
+SPRING ROLLS,2 Crispy spring rolls filled with pork/beef/vegetarian.,2,starters,,,Chả giò 
+SUMMER ROLLS,"2 Fresh rice paper summer rolls with mint, herbs, vermicelli & prawn served with fish sauce or peanut sauce.",4,starters,,,Gỏi cuốn
+PRAWNS CAKE,2 mini prawn pancakes with prawn and sweet potato.,4,starters,,,Bánh tôm chiên
+CHICKEN SKEWER,2 sticks of satay chicken with peanut sauce.,4,starters,,,Gà nướng satế
+TIGER PRAWN SKEWER,A skewer of 4 tiger prawns cooked with garlic butter.,4,starters,,,Tôm chiên bơ tỏi
+CABBAGE SALAD,"Cabbage, carrot, vietnamese mints, peanut,fried shallot, and fresh dressing, served with a rice cracker.",4,salads,,,Gỏi bắp cải
+GRILLED PORK SALAD,pickle salad with grilled pork.,6,salads,,,Gỏi bắp cải thịt nướng
+BUN BO HUE,"Beef noodle soup with vermicelli, fermented shrimp sauce, lemongrass, mints & onion.",12,soups,,,Bún bò huế
+CHICKEN PHO ,Slices of chicken in chicken broth.,10,soups,,,Phở gà
+LAMB SOUP,Lamb Shank soup with noodle.,15,soups,,,Đùi cừu hầm
+TOM YUM ,Thai Tom Yum noodle soup.,10,soups,,,Bún tom yum 
+CHICKEN CURRY,"Chicken curry soup in coconut milk, sweet potato & onion. Served with noodles.",10,soups,,,Cari gà
+BROKEN RICE,"Broken rice served with grilled pork, meatloaf, pickles & salad.",12,mains,,,Cơm tấm sườn chả
+PORK RIBS,Grilled lemongrass pork ribs.,10,mains,,,Sườn nướng 
+FRIED NOODLES,Fried noodles with prawns and vegetables.,10,mains,,,Bún xào tôm
+SALMON,"Fried Salmon cooked in lemon, dill, ginger & garlic sauce.",12,mains,,,Cá hồi chiên mắm gừng
+VERMICELLI WITH GRILLED PORK,"Vermicelli, grilled pork & spring onion. Severed with fish sauce.",12,mains,,,Bánh hỏi thịt nướng
+FRIED RICE MIXED,"Fried mix of carrot, pea, celery, onion, shallot, spring onion, egg, pork, prawn & rice.",10,mains,,,Cơm chiên thập cẩm
+Veggie SPRING ROLLS,2 Crispy spring rolls filled with vegetables.,2,starters,,v,Chả giò chay
+Veggie SUMMER ROLLS,"2 fresh rice paper rolls with noodle, cucumber & herbs. Served with peanut sauce.",4,starters,,v,Gỏi cuốn chay
+TOFU IN TOMATO SAUCE,"Tofu cooked with tomato sauce, herbs & onion.",6,starters,,v,Đậu hủ sốt cà
+GREEN STIR FRIED ,Pak choi stir fried with garlic & shitake mushroom.,5,starters,,v,Cải thìa xào nấm
+SALAD,"Seasonal vegetables with mints, herbs, peanut & shallot. Severed with a sesame cracker.",5,starters,,v,Salad chay
+MUSHROOM IN COCONUT MILK,"Shimeji/chestnut mushroom cooked with coconut milk, parsley & Alpinia officinarum.",7,starters,,v,Nấm xào nước dừa
+STEAMED ENOKI MUSHROOM,"Enoki mushroom steamed with soy sauce, spring onion & black pepper.",6,starters,,v,Nấm kim châm hấp nước tương
+STIR FRIED OYSTER MUSHROOMS ,"King oyster mushrooms stir fried with mushroom sauce, black pepper & coriander.",8,starters,,v,Nấm đùi gà xào nước tương
+VEGETABLE NOODLES,"Fried green vegetables, spring onion, chive, mushroom, tofu & noodles.",8,mains,,v,Bún xào chay
+FRIED RICE,"Fried mix of carrot, pea, celery, onion, shallot, spring onion, mushroom & rice.",8,mains,,v,Cơm chiên thập cẩm chay
+STEAMED RICE ,Steamed Jasmine rice.,2,rice,,,Cơm trắng

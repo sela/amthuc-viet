@@ -1,18 +1,59 @@
 ---
-layout: page
+layout: default
 permalink: /menu/
 title: Menu
 ---
-
-<div class="row justify-content-between">
-    <div class="col-md-8 pr-5">
-        <p>We ask to order the food the day before as everything is cooked fresh and most of the dishes take several hours to prepare and cook.</p>
-        <a href="starters" class="btn btn-info btn-spacing">Starters</a>
-        <a href="mains" class="btn btn-info btn-spacing">Mains</a> 
-        <a href="salads" class="btn btn-info btn-spacing">Salads</a> 
-        <a href="soups" class="btn btn-info btn-spacing">Soups</a> 
-        <a href="vegan-starters" class="btn btn-info btn-spacing">Vegan Starters</a> 
-        <a href="vegan-mains" class="btn btn-info btn-spacing">Vegan Mains</a>
-        <a href="rice" class="btn btn-info btn-spacing">Rice</a> 
+{% assign types = site.data.amthuc_viet_menu | map: 'category' | join: ','  | split: ',' | uniq  %}
+{% assign temp = site.data.amthuc_viet_menu | group_by: 'category' %}
+<section>
+    <div class="section-title">
+        <h2>The Menu</h2>
     </div>
-</div>
+
+    <div class="article-post">
+        <section class="recent-posts">
+            <div class="section-title">
+                <h2>
+                    {% for type in temp %}
+                        {% capture titlecase %}{% for word in type.name %}{{ word | capitalize }} {% endfor %}{% endcapture %}
+                        <span style="padding-right: 20px">
+                            <a href="#{{ type.name }}">{{ titlecase }}</a>
+                        </span>
+                    {% endfor %}
+                </h2>
+            </div>
+            {% assign menu_items = site.data.amthuc_viet_menu %}
+                {% for category in temp %}
+                    {% capture title_menu %}{% for word in category.name %}{{ word | capitalize }} {% endfor %}{% endcapture %}
+                    <h3 style="margin-top: 25px"><a id="{{category.name}}"></a>{{title_menu}}</h3>
+                    {% for item in category.items %}
+                        <div class="row" style="border-top: 1px solid #e8ebeb; padding: 10px;">
+                            <div class="col-8" font-weight-bold">
+                                <div class="font-weight-bold">{{ item.title | upcase }}<span style="color: red; padding-left: 10px">{{ item.dietary }}</span></div>
+                                <div style="font-size: 14px; padding-top: 5px">{{ item.description }}</div>
+                                <div style="padding-top: 5px">£{{ item.price }}</div>
+                            </div>
+
+                            <div class="ml-auto pics">
+                                <img src="/assets/images/{{ item.title | slugify }}.jpg" class="img-fluid" style="border-radius: 3px; height: 125px;">
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% endfor %}
+            </div>
+        </section>
+    </div>
+</section>
+
+<!--<div class="row justify-content-between">-->
+    <!--<div class="col-md-8 pr-5">-->
+        <!--<p>We ask to order the food the day before as everything is cooked fresh and most of the dishes take several hours to prepare and cook.</p>-->
+        <!--<a href="starters" class="btn btn-info btn-spacing">Starters</a>-->
+        <!--<a href="mains" class="btn btn-info btn-spacing">Mains</a> -->
+        <!--<a href="salads" class="btn btn-info btn-spacing">Salads</a> -->
+        <!--<a href="soups" class="btn btn-info btn-spacing">Soups</a> -->
+        <!--<a href="vegan-starters" class="btn btn-info btn-spacing">Vegan Starters</a> -->
+        <!--<a href="vegan-mains" class="btn btn-info btn-spacing">Vegan Mains</a>-->
+        <!--<a href="rice" class="btn btn-info btn-spacing">Rice</a> -->
+    <!--</div>-->
+<!--</div>-->
