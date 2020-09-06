@@ -10,10 +10,10 @@ title: Menu
     <div style="padding-bottom: 20px;"><b>To place an order please call us on&nbsp;<a href="tel:+447900307025">07900307025</a></b></div>
 
     <div class="article-post">
-        <div class="btn-group" role="group">
+        <div class="btn-group btn-group-sm" role="group">
             {% for type in temp %}
             {% capture titlecase %}{% for word in type.name %}{{ word | capitalize }} {% endfor %}{% endcapture %}
-                <a href="#{{ type.name }}" class="btn btn-secondary" style="font-size: 14px">{{ titlecase }}</a>
+                <a href="#{{ type.name }}" class="btn btn-secondary">{{ titlecase }}</a>
             {% endfor %}
         </div>
         <section class="recent-posts">
