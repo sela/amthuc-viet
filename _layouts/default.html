@@ -27,15 +27,6 @@
     <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
 
     <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            if ($.cookie('modal_shown') == null) {
-                $.cookie('modal_shown', 'yes', { expires: 28, path: '/' });
-                $('#amthucModal').modal('show');
-            }
-        });
-    </script>
-
 </head>
 
 {% if jekyll.environment == 'production' %}
@@ -56,24 +47,6 @@ ga('send', 'pageview');
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNWKJR2"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-    <div class="modal" tabindex="-1" role="dialog" id="amthucModal">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Update 19th Sep 2020</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Due to a fault of our cooker we have to suspend our service until we fix it. We will be back soon.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
 	<!-- defer loading of font and font awesome -->
 	<noscript id="deferred-styles">
 		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
@@ -211,9 +184,5 @@ ga('send', 'pageview');
 
 <script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script>
 
-{% if page.layout == 'post' %}
-<script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
-{% endif %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous"></script>
 </body>
 </html>
