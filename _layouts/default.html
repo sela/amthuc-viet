@@ -28,10 +28,10 @@
 
     <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
     <script>
-//        $(document).ready(function() {
+        $(document).ready(function() {
 //            if ($.cookie('modal_shown') == null) {
 //                $.cookie('modal_shown', 'yes', { expires: 1, path: '/' });
-//                $('#amthucModalOct').modal('show');
+                $('#amthucModalMessage').modal('show');
 //            }
         });
     </script>
@@ -55,7 +55,7 @@ ga('send', 'pageview');
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNWKJR2"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<div class="modal" tabindex="-1" role="dialog" id="amthucModalOct">
+<div class="modal" tabindex="-1" role="dialog" id="amthucModalMessage">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -210,5 +210,6 @@ ga('send', 'pageview');
 
 <script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous"></script>
+<script src="{{ site.baseurl }}/assets/js/messages.js"></script>
 </body>
 </html>
