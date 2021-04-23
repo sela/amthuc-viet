@@ -28,11 +28,11 @@
 
     <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
     <script>
-//        $(document).ready(function() {
-//            if ($.cookie('modal_shown') == null) {
-//                $.cookie('modal_shown', 'yes', { expires: 1, path: '/' });
-//                $('#amthucModalOct').modal('show');
-//            }
+        $(document).ready(function() {
+            if ($.cookie('modal_shown') == null) {
+                $.cookie('modal_shown', 'yes', { expires: 1, path: '/' });
+                $('#amthucModalApril').modal('show');
+            }
         });
     </script>
 </head>
@@ -55,17 +55,17 @@ ga('send', 'pageview');
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNWKJR2"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<div class="modal" tabindex="-1" role="dialog" id="amthucModalOct">
+<div class="modal" tabindex="-1" role="dialog" id="amthucModalApril">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">AAA</h5>
+                <h5 class="modal-title">Notice</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <p>BBB</p>
+                <p>We will be closed on Sunday 25th April.</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
