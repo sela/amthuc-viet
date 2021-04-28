@@ -26,7 +26,7 @@ title: Menu
                     {% for item in category.items %}
                         <div class="row" style="border-top: 1px solid #e8ebeb; padding: 10px;">
                             <div class="col-7 font-weight-bold">
-                                <div class="font-weight-bold">{{ item.title | upcase }}<span style="color: red; padding-left: 10px">{{ item.dietary }}</span></div>
+                                <div class="font-weight-bold">{{ item.title | upcase }}  - <span style="font-size: 85%">{{ item.vietnamese }}</span><span style="color: red; padding-left: 10px">{{ item.dietary }}</span></div>
                                 <div style="font-size: 14px; padding-top: 5px">{{ item.description }}</div>
                                 <div style="padding-top: 5px">£{{ item.price }}</div>
                             </div>
