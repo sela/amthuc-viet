@@ -7,6 +7,6 @@ jQuery(document).ready(function($) {
             document.getElementById("amthucModalMessage").innerHTML = myArr[0]["title"];
         }
     };
-    xmlhttp.open("GET", "data/messages.json", true);
+    xmlhttp.open("GET", {% site.data.messages | jsonify %}, true);
     xmlhttp.send();
 });
