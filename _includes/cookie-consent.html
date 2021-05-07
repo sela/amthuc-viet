@@ -33,6 +33,7 @@
 
     if(readCookie('cookie-notice-dismissed')=='true') {
         {% if jekyll.environment == 'production' %}
+            {% include {{ site.baseurl }}/assets/js/tm.js %}
             {% include {{ site.baseurl }}/assets/js/ga.js %}
         {% endif %}
     } else {
