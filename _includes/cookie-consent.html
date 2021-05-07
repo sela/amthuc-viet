@@ -33,8 +33,8 @@
 
     if(readCookie('cookie-notice-dismissed')=='true') {
         {% if jekyll.environment == 'production' %}
-            {% include {{ site.baseurl }}/assets/js/tm.js %}
-            {% include {{ site.baseurl }}/assets/js/ga.js %}
+            {% include tm.js %}
+            {% include ga.js %}
         {% endif %}
     } else {
         document.getElementById('cookie-notice').style.display = 'block';
