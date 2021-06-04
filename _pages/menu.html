@@ -12,7 +12,6 @@ title: Menu
 
     <div style="padding-bottom: 20px;"><b>To place an order please call us on&nbsp;<a href="tel:+447900307025">07900307025</a></b></div>
 
-
     <div class="article-post">
         <div class="btn-group btn-group-sm" role="group">
             {% for type in temp %}
@@ -34,15 +33,33 @@ title: Menu
                             </div>
 
                             <div class="ml-auto pics">
-                                <img src="/assets/images/{{ item.title | slugify }}.jpg" class="img-fluid" style="border-radius: 3px; height: 125px;">
+                                <a href="#" class="pop">
+                                    <img src="/assets/images/{{ item.title | slugify }}.jpg" class="img-fluid" style="border-radius: 3px; height: 125px;" alt="{{ item.title }}">
+                                </a>
                             </div>
                         </div>
                     {% endfor %}
                 {% endfor %}
-            </div>
         </section>
+        <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="imgtitle"></div>
+                        <img src="" id="imagepreview" style="max-height: 75vh;" >
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div style="border-top: groove; padding-top: 15px"><span style="color: red;">V</span> - Vegan</div>
+
 </section>
 
 

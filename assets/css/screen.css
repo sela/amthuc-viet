@@ -899,3 +899,19 @@ iframe {
     opacity: 0;
     transition: opacity .25s;
 }
+
+.pop {
+    cursor: pointer;
+}
+
+.img-fluid {
+    cursor: -moz-zoom-in;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+}
+
+#imgtitle {
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-align: center;
+}

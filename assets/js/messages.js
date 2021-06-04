@@ -1,4 +1,10 @@
 jQuery(document).ready(function($) {
+    $('.pop').on('click', function() {
+        $('#imagepreview').attr('src', $(this).find('img').attr('src').replace('.jpg', '-large.jpg'));
+        $('#imgtitle').text($(this).find('img').attr('alt'));
+        $('#imagemodal').modal('show');
+    });
+
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
