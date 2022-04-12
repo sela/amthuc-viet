@@ -1,3 +1,8 @@
 [
-
+  {
+    "title": "Notice",
+    "body": "We will be closed from Wed 13th April until Fri 15th April. We will reopen on Sat 16th April",
+    "publish_from": "2021-04-25",
+    "publish_to": "2021-04-25"
+  }
 ]
