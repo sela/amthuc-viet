@@ -81,26 +81,35 @@
             <!-- Begin Menu -->
 
             <ul class="navbar-nav ml-auto">
-                {% if page.url == "/menu" %}
+                {% if page.url == "/menu/" %}
                 <li class="nav-item active">
                     {% else %}
-                <li class="nav-item active">
+                <li class="nav-item">
                     {% endif %}
-                    <a class="nav-link" href="{{ site.baseurl }}/menu">Menu</a>
+                    <a class="nav-link" href="{{ site.baseurl }}/menu/">Menu</a>
                 </li>
 
                 {% if page.url == "/contact" %}
                 <li class="nav-item active">
                     {% else %}
-                <li class="nav-item active">
+                <li class="nav-item">
                     {% endif %}
                     <a class="nav-link" href="{{ site.baseurl }}/contact">Find us</a>
                 </li>
 
+                {% if page.url == "/catering/" %}
+                <li class="nav-item active">
+                    {% else %}
+                <li class="nav-item">
+                    {% endif %}
+                    <a class="nav-link" href="{{ site.baseurl }}/catering/">Catering</a>
+                </li>
+
+
                 {% if page.url == "/about" %}
                 <li class="nav-item active">
                     {% else %}
-                <li class="nav-item active">
+                <li class="nav-item">
                     {% endif %}
                     <a class="nav-link" href="{{ site.baseurl }}/about">Our story</a>
                 </li>
