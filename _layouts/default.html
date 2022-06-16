@@ -20,14 +20,6 @@
     <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
 
     <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
-    <script>
-//                $(document).ready(function() {
-//                    if ($.cookie('modal_shown') == null) {
-//                        $.cookie('modal_shown', 'yes', { expires: 1, path: '/' });
-//                        $('#amthucModalMessage').modal('show');
-//                    }
-//                });
-    </script>
 </head>
 
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
@@ -54,9 +46,9 @@
     </div>
 </div>
 <!-- defer loading of font and font awesome -->
+<script src="https://kit.fontawesome.com/02b0c2c9c4.js" crossorigin="anonymous"></script>
 <noscript id="deferred-styles">
     <link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </noscript>
 
 
@@ -97,13 +89,13 @@
                     <a class="nav-link" href="{{ site.baseurl }}/contact">Find us</a>
                 </li>
 
-                {% if page.url == "/catering/" %}
-                <li class="nav-item active">
-                    {% else %}
-                <li class="nav-item">
-                    {% endif %}
-                    <a class="nav-link" href="{{ site.baseurl }}/catering/">Catering</a>
-                </li>
+                <!--{% if page.url == "/catering/" %}-->
+                <!--<li class="nav-item active">-->
+                    <!--{% else %}-->
+                <!--<li class="nav-item">-->
+                    <!--{% endif %}-->
+                    <!--<a class="nav-link" href="{{ site.baseurl }}/catering/">Catering</a>-->
+                <!--</li>-->
 
 
                 {% if page.url == "/about" %}
@@ -175,6 +167,19 @@
                     Copyright © {{ site.time | date: "%Y" }} {{ site.name }}
                 </div>
                 <div class="col-md-6 col-sm-6 text-center text-lg-right">
+                    {% if site.data.social-media %}
+                    <div id="social-media">
+                        Follow us:
+                        {% assign sm = site.data.social-media %}
+                        {% for entry in sm %}
+                            {% assign key = entry | first %}
+                            {% if sm[key].id %}
+                                <a href="{{ sm[key].href }}{{ sm[key].id }}" title="{{ sm[key].title }}"><i class="fa-brands {{ sm[key].fa-icon }}"></i></a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
                 </div>
             </div>
         </div>

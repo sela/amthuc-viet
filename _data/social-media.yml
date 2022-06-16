@@ -1,0 +1,11 @@
+facebook:
+  id: 'amthucViet.UK'
+  href: 'https://www.facebook.com/'
+  title: 'Facebook'
+  fa-icon: 'fa-facebook-square'
+
+instagram:
+  id: 'amthuc_vn'
+  href: 'https://www.instagram.com/'
+  title: 'Instagram'
+  fa-icon: 'fa-instagram-square'
