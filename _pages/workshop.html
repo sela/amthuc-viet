@@ -1,0 +1,96 @@
+---
+layout: default
+title: Cooking workshop
+permalink: /workshop/
+---
+
+<style>
+    img {
+        max-width: 100%;
+
+    }
+    img:hover {
+        cursor: auto;
+    }
+    .image-container {
+        background-size: cover;
+    }
+    .box {
+        text-align: center;
+        width: 400px;
+        margin: 0 auto;
+    }
+</style>
+
+<section class="recent-posts">
+
+    <div class="section-title">
+
+        <h2>Cooking workshop</h2>
+
+    </div>
+    <div class="row">
+        <div class="col-md-6 order-md-2 pr-3 pb-4">
+            <div class="box">
+                <div id="image-container" class="image-container">
+                    <img src="/assets/images/course/summer-rolls.jpg" class="img-fluid" alt="Summer Rolls">
+                    <img src="/assets/images/course/broken-rice.jpg" class="img-fluid" alt="Broken Rice" style="display: none">
+                    <img src="/assets/images/course/grill-pork-noodle.jpg" class="img-fluid" alt="Grill Pork Noddles" style="display: none">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 order-md-1 pr-3">
+            <p>Welcome to our Vietnamese cuisine cooking workshop, taught by Chef Yen from South Vietnam, located in Wadhurst, East Sussex.</p>
+            <p>In this workshop, you will learn how to cook authentic Vietnamese dishes using traditional techniques and ingredients. We believe that cooking Vietnamese food is not just about following recipes, but also about understanding the culture and the role of food in Vietnamese life.</p>
+            <p>We will start the workshop by introducing you to the Vietnamese herbs grown in our garden. You will learn about the unique flavours of these herbs and how to use them in your cooking.</p>
+            <p>Next, Chef Yen will guide you through the preparation and cooking of some classic Vietnamese dishes. You will learn about the importance of balancing flavours and textures in Vietnamese cuisine, and how to achieve this through cooking various techniques.</p>
+            <p>After cooking, we will sit down together to taste and enjoy the delicious food that you have prepared. This is a great opportunity to ask Chef Yen any questions you may have about Vietnamese cuisine, culture, or cooking techniques.</p>
+            <p>Whether you are a beginner or an experienced cook, this Vietnamese cuisine cooking workshop is the perfect way to explore the rich and diverse flavours of Vietnamese food. Join us and discover the joys of cooking and eating Vietnamese cuisine!</p>
+            <h4>Next workshops</h4>
+            <div id="eventbrite-widget-container-583878104127"></div>
+
+            <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
+
+            <script type="text/javascript">
+                var exampleCallback = function() {
+                    console.log('Order complete!');
+                };
+
+                window.EBWidgets.createWidget({
+                    // Required
+                    widgetType: 'checkout',
+                    eventId: '583878104127',
+                    iframeContainerId: 'eventbrite-widget-container-583878104127',
+
+                    // Optional
+                    iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+                    onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+                });
+            </script>
+        </div>
+
+    </div>
+</section>
+<script>
+    const imageContainer = document.getElementById('image-container');
+    const images = imageContainer.querySelectorAll('img');
+    let currentIndex = 0;
+
+    function changeImage() {
+        // Hide current image
+        images[currentIndex].style.display = 'none';
+
+        // Increment index, reset to 0 if at end of array
+        currentIndex = (currentIndex + 1) % images.length;
+
+        // Show next image
+        images[currentIndex].style.display = 'block';
+    }
+
+    // Call changeImage function every 5 seconds
+    setInterval(changeImage, 5000);
+
+</script>
+
+
+
