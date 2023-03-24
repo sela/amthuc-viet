@@ -1,0 +1,73 @@
+---
+layout: default
+title: Catering
+permalink: /catering/
+---
+
+<style>
+    img {
+        max-width: 100%;
+    }
+    img:hover {
+        cursor: auto;
+    }
+    .image-container {
+        background-size: cover;
+    }
+    .box {
+        text-align: center;
+        width: 400px;
+        margin: 0 auto;
+    }
+</style>
+
+<section class="recent-posts">
+
+    <div class="section-title">
+
+        <h2>Catering</h2>
+
+    </div>
+    <div class="row">
+        <div class="col-md-6 order-md-2 pr-3 pb-4">
+            <div class="box">
+                <div id="image-container" class="image-container">
+                    <img src="/assets/images/catering/catering1.jpg" class="img-fluid" alt="Vietnamese food served on a table">
+                    <img src="/assets/images/catering/catering2.jpg" class="img-fluid" alt="Vietnamese food platter" style="display: none">
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 order-md-1 pr-3">
+            <p>Looking for a catering service that can feed up to 100 guests with authentic Vietnamese cuisine? Look no further than our catering and private chef service!
+            We offer a wide variety of dishes that showcase the rich and diverse flavors of Vietnamese cuisine. From savoury pho to crispy spring rolls, we use only the freshest ingredients and traditional cooking techniques to create dishes that are both delicious and satisfying.</p>
+            <p>Our catering service is perfect for large events such corporate functions, birthday parties and family gatherings. We can provide all the food and necessary equipment to ensure that your guests are well-fed and happy.</p>
+            <p>If you're looking for a more intimate dining experience, our private chef service is perfect for you. We can create a custom menu based on your preferences and dietary restrictions, and our chefs will come to your home or event venue to prepare and serve your meal.</p>
+            <p>Don't settle for bland and boring catering options – let us bring the authentic flavours of Vietnam to your next event! <a href="/contact/">Contact us</a> today to learn more about our catering and private chef services.</p>
+        </div>
+
+    </div>
+</section>
+
+<script>
+    const imageContainer = document.getElementById('image-container');
+    const images = imageContainer.querySelectorAll('img');
+    let currentIndex = 0;
+
+    function changeImage() {
+        // Hide current image
+        images[currentIndex].style.display = 'none';
+
+        // Increment index, reset to 0 if at end of array
+        currentIndex = (currentIndex + 1) % images.length;
+
+        // Show next image
+        images[currentIndex].style.display = 'block';
+    }
+
+    // Call changeImage function every 5 seconds
+    setInterval(changeImage, 5000);
+
+</script>
+
+
