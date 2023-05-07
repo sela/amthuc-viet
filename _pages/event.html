@@ -4,6 +4,8 @@ permalink: /market
 title: Markets & Pop Ups
 ---
 {% assign events = site.data.event | sort: "edate" %}
+{% assign today = 'now' | date: '%Y-%m-%d' %}
+
 <section>
     <h2 style="padding-bottom: 20px">Markets & Pop ups</h2>
 
@@ -28,6 +30,9 @@ title: Markets & Pop Ups
                         </div>
 
                     {% for item in events %}
+                        {% if item.edate < today %}
+                        {% continue %}
+                        {% endif %}
                         <div class="row" style="border-top: 1px solid #e8ebeb; padding: 10px;">
                             <div class="col-md-3">
                                 <div>{{ item.edate | date: "%A, %e %b %Y" }}</div>

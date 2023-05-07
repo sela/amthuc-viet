@@ -10,7 +10,31 @@ title: Home
     #eventList1266045 > div > div:nth-child(2) {
         display: none;
     }
+    .badge {
+        transform: rotate(-25deg);
+    }
 </style>
+
+{% assign events = site.data.event %}
+{% assign edate = events.edate | date: '%Y-%m-%d' %}
+{% assign today = 'now' | date: '%Y-%m-%d' %}
+{% assign tomorrow = 'now' | date: '%s' | plus:86400 | date: '%Y-%m-%d' %}
+
+{% assign event_today = false %}
+{% assign event_tomorrow = false %}
+
+{% for object in events %}
+    {% assign edate = object.edate | date: '%Y-%m-%d' %}
+    {% if edate == today %}
+        {% assign event_today = true %}
+    {% endif %}
+    {% if edate == tomorrow %}
+        {% assign event_tomorrow = true %}
+    {% endif %}
+{% endfor %}
+{% if event_today %}
+    {% assign event_tomorrow = false %}
+{% endif %}
 
 <section class="recent-posts">
 
@@ -28,7 +52,20 @@ title: Home
             <div class="col-md-12 text-center">
                 <a href="menu" class="btn btn-info btn-spacing mr-3">Food Menu</a>
                 <a href="cooking-class" class="btn btn-info btn-spacing mr-3">Cooking class</a>
-                <a href="catering" class="btn btn-info btn-spacing">Catering</a>
+                <a href="catering" class="btn btn-info btn-spacing mr-3">Catering</a>
+                <a href="market" class="btn btn-info btn-spacing mr-3 position-relative">
+                    Markets & Pop ups
+                    {% if event_today %}
+                      <span class="badge bg-danger position-absolute top-0 start-100 translate-middle">
+                        Today
+                      </span>
+                    {% endif %}
+                    {% if event_tomorrow %}
+                      <span class="badge bg-danger position-absolute top-0 start-100 translate-middle">
+                        Tomorrow
+                      </span>
+                    {% endif %}
+                </a>
             </div>
         </div>
         <div class="row">
