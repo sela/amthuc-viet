@@ -1,0 +1,59 @@
+---
+layout: default
+permalink: /test
+title: Markets & Pop Ups
+---
+{% assign events = site.data.event | sort: "edate" %}
+{% assign today = site.time | date: '%Y-%m-%d %I:%M %P %Z' %}
+{{ today }}
+
+<section>
+    <h2 style="padding-bottom: 20px">Markets & Pop ups</h2>
+
+
+    <div class="article-post">
+        <!--<div class="btn-group btn-group-sm" role="group">-->
+        <section class="recent-posts">
+                    <div class="container">
+                        <div class="row" style="border-top: 1px solid #e8ebeb; padding: 10px;">
+                            <div class="col-md-3">
+                                <div>Date</div>
+                            </div>
+                            <div class="col-md-3">
+                                Time
+                            </div>
+                            <div class="col-md-3">
+                                Event Name
+                            </div>
+                            <div class="col-md-3">
+                                Location
+                            </div>
+                        </div>
+
+                    {% for item in events %}
+                        {% if item.edate < today %}
+                        {% continue %}
+                        {% endif %}
+                        <div class="row" style="border-top: 1px solid #e8ebeb; padding: 10px;">
+                            <div class="col-md-3">
+                                <div>{{ item.edate | date: "%A, %e %b %Y" }}</div>
+                            </div>
+                            <div class="col-md-3">
+                                {{ item.start_time }} - {{ item.end_time }}
+                            </div>
+                            <div class="col-md-3">
+                                <div style="font-size: 14px; padding-top: 5px"><a href="{{ item.link }}" target='_blank'>{{ item.name }}</a></div>
+                            </div>
+                            <div class="col-md-3">
+                                <div style="font-size: 14px; padding-top: 5px">{{ item.location }}</div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    </div>
+
+        </section>
+    </div>
+
+</section>
+
+
