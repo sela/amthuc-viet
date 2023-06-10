@@ -1,2 +1,8 @@
-[ 
+[
+  {
+    "title": "Notice",
+    "body": "Apologies, but we are not accepting additional food orders today.",
+    "publish_from": "2021-04-25",
+    "publish_to": "2021-04-25"
+  }
 ]
