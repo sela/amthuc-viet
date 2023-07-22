@@ -15,10 +15,20 @@ permalink: /cooking-class/
     .image-container {
         background-size: cover;
     }
-    .box {
-        text-align: center;
-        width: 400px;
-        margin: 0 auto;
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        border: 2px solid black;
+    }
+    th {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border: 1px solid black;
+    }
+    td {
+        padding: 10px;
+        border: 1px solid black;
     }
 </style>
 
@@ -45,28 +55,47 @@ permalink: /cooking-class/
             <p>After cooking, we will sit down together to taste and enjoy the delicious food that you have prepared. This is a great opportunity to ask Chef Yen any questions you may have about Vietnamese cuisine, culture, or cooking techniques.</p>
             <p>Whether you are a beginner or an experienced cook, this Vietnamese cuisine cooking class is the perfect way to explore the rich and diverse flavours of Vietnamese food. Join us and discover the joys of cooking and eating Vietnamese cuisine!</p>
             <h4>Next classes</h4>
-            <div id="eventbrite-widget-container-599122400227"></div>
-
-            <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
-
-            <script type="text/javascript">
-                var exampleCallback = function() {
-                    console.log('Order complete!');
-                };
-
-                window.EBWidgets.createWidget({
-                    // Required
-                    widgetType: 'checkout',
-                    eventId: '599122400227',
-                    iframeContainerId: 'eventbrite-widget-container-599122400227',
-
-                    // Optional
-                    iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-                    onOrderComplete: exampleCallback  // Method called when an order has successfully completed
-                });
-            </script>
+            <table style="border: 1px">
+                <tr>
+                    <th>Date/Time</th>
+                    <th>Availability</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>
+                        13th August 2023<br/>12pm - 3pm
+                    </td>
+                    <td>
+                        Full
+                    </td>
+                    <td>
+                        £55
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        10th September 2023<br/>12pm - 3pm
+                    </td>
+                    <td>
+                        Open for booking, please contact us to book
+                    </td>
+                    <td>
+                        £55
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        8th October 2023<br/>12pm - 3pm
+                    </td>
+                    <td>
+                        Open for booking, please contact us to book
+                    </td>
+                    <td>
+                        £55
+                    </td>
+                </tr>
+            </table>
         </div>
-
     </div>
 </section>
 <script>
