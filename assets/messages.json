@@ -1,2 +1,8 @@
-[]
-
+[
+  {
+    "title": "Notice",
+    "body": "We are closed on Wednesday 2nd August for a priviate event. You can send us your orders for Thursday, Friday or Saturday",
+    "publish_from": "2021-04-25",
+    "publish_to": "2021-04-25"
+  }
+]
