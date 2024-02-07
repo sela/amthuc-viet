@@ -1,5 +1,5 @@
 title,description,price,category,allergy,dietary,vietnamese
-"SUMMER ROLLS","Two rice paper rolls filled with prawns, lettuce, cucumber, mint, herbs, and noodles, served with a choice of fish or peanut sauce.",5.5,starters,,,"Gỏi cuốn"
+"SUMMER ROLLS","Two rice paper rolls filled with prawns, lettuce, cucumber, mint, herbs, and noodles, served with a choice of fish or peanut sauce.",6,starters,,,"Gỏi cuốn"
 "CHICKEN SKEWERS","Two skewers of free range chicken satay with peanut sauce.",6,starters,,,"Gà nướng satế"
 "XL Tiger prawns in garlic butter sauce","Four XL tiger prawns pan-fried with garlic butter, black pepper, and coriander.",6.5,starters,,,"Tôm chiên bơ tỏi"
 "CABBAGE SALAD","A refreshing cabbage salad with carrots, mint, herbs, and fried shallots, served with sesame rice crackers.",6.5,salads,,v,"Gỏi bắp cải"
@@ -13,8 +13,8 @@ title,description,price,category,allergy,dietary,vietnamese
 SALMON,"Fried Salmon served with fish sauce, lemon, dill, ginger, garlic & black pepper.",13.5,mains,,,"Cá hồi chiên mắm gừng"
 "VERMICELLI WITH GRILLED PORK","Vermicelli, free-range grilled pork & spring onion. Severed with fish sauce.",13.5,mains,,,"Bánh hỏi thịt nướng"
 "FRIED RICE MIXED","Fried rice with carrot, peas, celery, onion, corn, spring onion, kabanos, prawns, mussels & coriander.",12,mains,,,"Cơm chiên thập cẩm"
-"Grilled Pork Noodles","Fresh noodles served with grilled free-range pork, salad, herbs, peanuts & fish sauce.",11.5,mains,,,"Bún Thịt Nướng"
-"Vegan SUMMER ROLLS","Two light and tasty rice paper rolls filled with tender noodles, fragrant fungus, crunchy vegetables, and fragrant herbs, paired with a peanut sauce.",5.5,starters,,v,"Gỏi cuốn chay"
+"Grilled Pork Noodles","Fresh noodles served with grilled free-range pork, salad, herbs, peanuts & fish sauce.",12,mains,,,"Bún Thịt Nướng"
+"Vegan SUMMER ROLLS","Two light and tasty rice paper rolls filled with tender noodles, fragrant fungus, crunchy vegetables, and fragrant herbs, paired with a peanut sauce.",6,starters,,v,"Gỏi cuốn chay"
 "TOFU IN TOMATO SAUCE","Soft tofu simmered in a savory tomato sauce with fragrant herbs and onions.",7.5,starters,,v,"Đậu hủ sốt cà"
 "GREEN STIR FRIED","Pak choi & mushroom fried with garlic, soy sauce and spring onion.",6.5,starters,,v,"Cải thìa xào nấm"
 SALAD,"Seasonal vegetables with mints, herbs, peanut & shallot. Served with sesame rice crackers.",6.5,salads,,v,"Salad chay"
