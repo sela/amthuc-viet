@@ -30,11 +30,11 @@ title: Markets & Pop Ups
                         </div>
 
                     {% for item in events %}
-                        {% if item.edate < today %}
+                        {% if item.edate < today || item.edate === '' %}
                         {% continue %}
                         {% endif %}
                         <div class="row" style="border-top: 1px solid #e8ebeb; padding: 10px;">
-                            <div class="col-md-3" data-test="{{item.edate}}">
+                            <div class="col-md-3">
                                 <div>{{ item.edate | date: "%A, %e %b %Y" }}</div>
                             </div>
                             <div class="col-md-3">
