@@ -34,7 +34,7 @@ title: Markets & Pop Ups
                         {% continue %}
                         {% endif %}
                         <div class="row" style="border-top: 1px solid #e8ebeb; padding: 10px;">
-                            <div class="col-md-3">
+                            <div class="col-md-3" data-test="{{item.edate}}">
                                 <div>{{ item.edate | date: "%A, %e %b %Y" }}</div>
                             </div>
                             <div class="col-md-3">
