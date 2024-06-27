@@ -23,8 +23,7 @@
 
     <script>
         function createICal(event) {
-            let ical = `
-    BEGIN:VCALENDAR
+            return `BEGIN:VCALENDAR
     VERSION:2.0
     PRODID:-//Your Organization//NONSGML v1.0//EN
     BEGIN:VEVENT
@@ -37,34 +36,29 @@
     LOCATION:${event.location}
     END:VEVENT
     END:VCALENDAR`;
-    
-            return ical;
         }
     
         function downloadICal(event) {
             let ical = createICal(event);
-            let blob = new Blob([ical], { type: 'text/calendar' });
+            let icalData = encodeURIComponent(ical);
             let filename = `${event.summary}.ics`;
+            let dataUri = `data:text/calendar;charset=utf-8,${icalData}`;
     
-            // For browsers that support the download attribute
-            if (navigator.msSaveBlob) {
-                navigator.msSaveBlob(blob, filename);
-            } else {
-                let link = document.createElement('a');
-                link.href = URL.createObjectURL(blob);
-                link.download = filename;
+            let link = document.createElement('a');
+            link.href = dataUri;
+            link.download = filename;
     
-                // For Safari support
-                if (typeof link.download === 'undefined') {
-                    link.setAttribute('target', '_blank');
-                }
-    
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
+            // For Safari support
+            if (navigator.userAgent.indexOf('Safari') !== -1 && navigator.userAgent.indexOf('Chrome') === -1) {
+                link.setAttribute('target', '_blank');
             }
+    
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         }
     </script>
+
 </head>
 
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
