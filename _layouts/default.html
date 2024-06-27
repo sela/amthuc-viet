@@ -20,6 +20,38 @@
     <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
 
     <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+<script>
+    function createICal(event) {
+        let ical = `
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Your Organization//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:${event.id}
+DTSTAMP:${event.created_at}
+DTSTART:${event.start_date}
+DTEND:${event.end_date}
+SUMMARY:${event.summary}
+DESCRIPTION:${event.description}
+LOCATION:${event.location}
+END:VEVENT
+END:VCALENDAR`;
+
+        return ical;
+    }
+
+    function downloadICal(event) {
+        let ical = createICal(event);
+        let blob = new Blob([ical], { type: 'text/calendar' });
+        let link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        link.download = `${event.summary}.ics`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+</script>
+    
 </head>
 
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
