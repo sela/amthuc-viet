@@ -89,7 +89,6 @@ edate,name,type,location,start_time,end_time,link
 2026-02-07,"Penshurst Farmers' Market",m,"Penshurst Place Car Park, Penshurst Place, Penshurst, TN11 8DG","09:00","12:00","https://www.facebook.com/PenshurstFarmersMarket/"
 2026-03-07,"Penshurst Farmers' Market",m,"Penshurst Place Car Park, Penshurst Place, Penshurst, TN11 8DG","09:00","12:00","https://www.facebook.com/PenshurstFarmersMarket/"
 2026-05-02,"Penshurst Farmers' Market",m,"Penshurst Place Car Park, Penshurst Place, Penshurst, TN11 8DG","09:00","12:00","https://www.facebook.com/PenshurstFarmersMarket/"
-2026-06-06,"Penshurst Farmers' Market",m,"Penshurst Place Car Park, Penshurst Place, Penshurst, TN11 8DG","09:00","12:00","https://www.facebook.com/PenshurstFarmersMarket/"
 2026-07-04,"Penshurst Farmers' Market",m,"Penshurst Place Car Park, Penshurst Place, Penshurst, TN11 8DG","09:00","12:00","https://www.facebook.com/PenshurstFarmersMarket/"
 2026-08-01,"Penshurst Farmers' Market",m,"Penshurst Place Car Park, Penshurst Place, Penshurst, TN11 8DG","09:00","12:00","https://www.facebook.com/PenshurstFarmersMarket/"
 2026-09-26,"Lakedown Brewing",p,"Lakedown Farm, Swife Lane, Burwash, TN21 8UX","12:00","19:00","https://lakedownbrewing.com/pages/coming-soon-at-lakedown"
@@ -121,3 +120,7 @@ edate,name,type,location,start_time,end_time,link
 2026-05-09,"Titsey Spring Festival",p,"Titsey Brewing Co & Taproom, Clarks Lane, Tatsfield, TN16 2JU","16:00","22:30","https://www.titseyfest.co.uk/"
 2026-06-07,"The Loddington Tap",p,"Loddington Farm, Loddington Lane, Linton, Maidstone, ME17 4AG","13:00","17:00","https://www.loddingtonfarm.co.uk/loddington-tap"
 2026-07-05,"First Food Sunday",m,"Market Square, Battle","10:00","13:00","https://www.facebook.com/ffsbattle/"
+2026-06-06,"Gun Brewery Taproom",p,"awthbush Farm, Gun Hill, Heathfield TN21 0JY","12:00","21:00","https://www.gunbrewery.co.uk/taproom-main"
+2026-08-14,"Gun Brewery Taproom",p,"awthbush Farm, Gun Hill, Heathfield TN21 0JY","15:00","21:00","https://www.gunbrewery.co.uk/taproom-main"
+2026-08-21,"Gun Brewery Taproom",p,"awthbush Farm, Gun Hill, Heathfield TN21 0JY","15:00","21:00","https://www.gunbrewery.co.uk/taproom-main"
+
